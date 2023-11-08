@@ -1,0 +1,21 @@
+.Nav {
+    margin-bottom: 80px;
+    background-color:#2a7445;
+}
+
+#visitasMenu {
+    bottom: 10px;
+    position: absolute;
+    width: 100%;
+    margin: 0;
+}
+
+#offcanvasNavbar-expand-false {
+    background-color: #caffca;
+}
+
+@media (max-width: 480px)  {
+    .Nav {
+        margin-bottom: 60px;
+    }
+}

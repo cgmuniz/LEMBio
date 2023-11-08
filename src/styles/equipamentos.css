@@ -1,0 +1,11 @@
+.imgEquip {
+    width: 80%;
+    max-width: 800px;
+    max-height: 500px;
+    border-radius: 8px;
+    object-fit:contain;
+}
+
+.equip {
+    margin-top: 60px;
+}

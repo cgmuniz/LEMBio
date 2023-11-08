@@ -1,0 +1,54 @@
+
+.Form {
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+    max-width: 800px;
+  }
+  
+  .InputForm {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+  
+  .labelInput {
+    width: 100%;
+  }
+  
+  .InputForm input{
+    margin-top: 3px;
+    width: 100%;
+    font-size: 14px;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #c4c4c4;
+  }
+  
+  .InputForm textarea{
+    resize: none;
+    margin-top: 3px;
+    width: 100%;
+    font-size: 14px;
+    border-style: none;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #c4c4c4;
+  }
+  
+  .botaoEnviar {
+    text-align: right;
+  }
+  
+  .botaoEnviar input {
+    background-color: #caffca;
+    font-size: 15px;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-style: none;
+    border: 1px solid #c4c4c4;
+    border-radius: 15px;
+  }
