@@ -37,7 +37,8 @@ function SobreCard ({card}) {
                 maxH={500}
                 objectFit={"cover"}
                 borderLeftRadius={tamanho === 3 && 8}
-                borderTopRadius={tamanho < 3 && 8}
+                borderTopRightRadius={tamanho < 3 && 8}
+                borderTopLeftRadius={8}
             />
             <VStack
              p={25}
