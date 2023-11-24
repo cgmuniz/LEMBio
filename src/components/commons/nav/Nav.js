@@ -44,7 +44,7 @@ function NavLab(props) {
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
             >
-              <Offcanvas.Header closeButton>
+              <Offcanvas.Header closeButton style={{backgroundColor: "#2a7445", color:'white'}}>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
                   LEMBio
                 </Offcanvas.Title>
@@ -54,9 +54,11 @@ function NavLab(props) {
                   <Nav.Link className={ location.pathname === '/' ? 'nav-link active': 'nav-link'} href="/">Início</Nav.Link> 
                   <Nav.Link className={ location.pathname === '/coordenadores' ? 'nav-link active': 'nav-link'} href="coordenadores">Coordenadores</Nav.Link>
                   <Nav.Link className={ location.pathname === '/comite' ? 'nav-link active': 'nav-link'} href="comite">Comitê de usuários</Nav.Link>
+                  <Nav.Link className={ location.pathname === '/equipe' ? 'nav-link active': 'nav-link'} href="equipe">Equipe</Nav.Link>
                   <Nav.Link className={ location.pathname === '/equipamentos' ? 'nav-link active': 'nav-link'} href="equipamentos">Equipamentos</Nav.Link>
                   <Nav.Link className={ location.pathname === '/publicacoes' ? 'nav-link active': 'nav-link'} href="publicacoes">Publicações</Nav.Link>
                   <Nav.Link className={ location.pathname === '/colaboradores' ? 'nav-link active': 'nav-link'} href="colaboradores">Colaboradores</Nav.Link>
+                  <Nav.Link className={ location.pathname === '/apoios' ? 'nav-link active': 'nav-link'} href="apoios">Apoios</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
               {isTablet &&
