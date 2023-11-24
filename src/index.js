@@ -13,6 +13,8 @@ import Comite from './routes/Comite'
 import Equipamentos from './routes/Equipamentos'
 import Publicacoes from './routes/Publicacoes'
 import Colaboradores from './routes/Colaboradores'
+import Equipe from './routes/Equipe';
+import Apoio from './routes/Apoio';
 
 /*const router = createBrowserRouter([
   {
@@ -44,6 +46,10 @@ const router = createBrowserRouter([
         element: <Comite />,
       },
       {
+        path: "equipe",
+        element: <Equipe />,
+      },
+      {
         path: "equipamentos",
         element: <Equipamentos />,
       },
@@ -54,6 +60,10 @@ const router = createBrowserRouter([
       {
         path: "colaboradores",
         element: <Colaboradores />,
+      },
+      {
+        path: "apoios",
+        element: <Apoio />,
       }
     ]
   },
