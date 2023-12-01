@@ -24,7 +24,30 @@
 }
 
 .flexSobre{
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    max-height: 600px;
+}
+
+@media (max-width: 1200px) {
+    .flexSobre{
+        max-height: 800px;
+    }
+
+    .imgSobre{
+        width: 100% !important;
+        height: 300px;
+    }
+  }
+
+@media (max-width: 480px) {
+    .flexSobre{
+        max-height: 500px;
+    }
+
+    .imgSobre{
+        width: 100% !important;
+        height: 180px;
+    }
 }
 
 .modal-overlay {
@@ -56,6 +79,7 @@
     right: 3%;
     font-size: 25px;
     cursor: pointer;
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 1);
 }
 .h5img {
     position: absolute;
