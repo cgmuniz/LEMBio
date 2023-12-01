@@ -1,11 +1,74 @@
 .imgEquip {
-    width: 80%;
-    max-width: 800px;
-    max-height: 500px;
-    border-radius: 8px;
-    object-fit:contain;
+    max-width: 80%;
+    max-height: 400px;
+    padding: 20px;
+    object-fit:cover;
+    border-radius: 50px;
+}
+
+.englobaImgEquip{
+    position: relative;
+    color: black;
+    background-color: #EEEEEE;
+    width: 350px;
+    height: 400px;
+    flex-direction: column;
+    margin: 20px;
+    border-radius: 15px;
+    &:hover {
+        cursor: pointer;
+      }
+}
+
+.modal-overlay {
+    background: #00000049;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1100;
+  }
+  
+  .modal-content {
+    width: 90%;
+    max-width: 1000px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+.x{
+    color: rgb(214, 214, 214);
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    font-size: 25px;
+    cursor: pointer;
+}
+.h5img {
+    position: absolute;
+    bottom: 2%;
 }
 
 .equip {
     margin-top: 60px;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+@media (max-width: 480px)  {
+    .englobaImgEquip{
+        text-align: center;
+        height: 340px;
+        width: 280px;
+        margin-bottom: 20px;
+        padding-bottom: 40px;
+    }
 }

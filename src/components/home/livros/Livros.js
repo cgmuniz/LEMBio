@@ -10,6 +10,7 @@ import { Center } from "@chakra-ui/react";
 import Peptidomics from '../../../img/livros/peptidomics.webp'
 import Proteomics from '../../../img/livros/proteomics.jpg'
 import Mass from '../../../img/livros/mass.webp'
+import Bioscprt from '../../../img/livros/bioscrpt.png'
 
 const Boop = ({
     x = 0,
@@ -63,12 +64,12 @@ const Boop = ({
 };
 
 function Livros() {
-    const [isTablet, setIsTablet] = useState(window.innerWidth <= 1000);
+    const [isTablet, setIsTablet] = useState(window.innerWidth <= 1300);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 600);
 
     useEffect(() => {
         function handleResize() {
-        setIsTablet(window.innerWidth <= 1000);
+        setIsTablet(window.innerWidth <= 1300);
         setIsMobile(window.innerWidth <= 600);
         }
 
@@ -86,8 +87,8 @@ function Livros() {
     const settings = {
         spaceBetween: 35,
         slidesPerView: tamanho,
-        navigation: tamanho < 3,
-        pagination: tamanho < 3 && {
+        navigation: true,
+        pagination: true && {
             clickable: true
         },
         draggable: tamanho < 3
@@ -98,62 +99,82 @@ function Livros() {
             <div className='categoriaTitle'>
                 <h2>Aprenda mais sobre</h2>
             </div>
-            <Slider settings={settings}>
-                <Swiper modules={[]} {...settings}>
-                    <SwiperSlide>
-                        <Boop x={0} y={-10} scale={1} rotation={0} timing={150}>
-                            <a className="linkLivros" href="https://link.springer.com/book/10.1007/978-1-4939-7537-2" target="_blank" rel="noreferrer">
-                                <Flex className='Livro' direction={"column"} >
-                                    <Image
-                                        className="imgLivro"
-                                        src={Peptidomics}
-                                        alt='Livro "Peptidomics: Methods and Strategies"'
-                                    />
-                                    <VStack className="txtLivo" p={25} spacing={16}>
-                                        <Center><h5>Peptidômica</h5> </Center>
-                                    </VStack>        
-                                </Flex>
-                            </a>
-                        </Boop>
-                    </SwiperSlide>
-                </Swiper>
-                <Swiper modules={[]} {...settings}>
-                    <SwiperSlide>
-                        <Boop x={0} y={-10} scale={1} rotation={0} timing={150}>
-                            <a className="linkLivros" href="https://onlinelibrary.wiley.com/doi/book/10.1002/0471721980" target="_blank" rel="noreferrer">
-                                <Flex className='Livro' direction={"column"}>
-                                    <Image
-                                        className="imgLivro"
-                                        src={Proteomics}
-                                        alt='Livro "Protein Sequencing and Identification Using Tandem Mass Spectrometry"'
-                                    />
-                                    <VStack className="txtLivo" p={25} spacing={16}>
-                                        <Center><h5>Proteômica</h5></Center> 
-                                    </VStack>        
-                                </Flex>
-                            </a>
-                        </Boop>
-                    </SwiperSlide>
-                </Swiper>
-                <Swiper modules={[]} {...settings}>
-                    <SwiperSlide>
-                        <Boop x={0} y={-10} scale={1} rotation={0} timing={150}>
-                            <a className="linkLivros" href="https://link.springer.com/book/10.1007/978-3-319-54398-7" target="_blank" rel="noreferrer">
-                                <Flex className='Livro' direction={"column"}>
-                                    <Image
-                                        className="imgLivro"
-                                        src={Mass}
-                                        alt='Livro "Mass Spectrometry: A Textbook"'
-                                    />
-                                    <VStack className="txtLivo" p={25} spacing={16}>
-                                        <Center><h5 style={{textAlign:'center'}}>Espectrometria de Massas</h5></Center> 
-                                    </VStack>        
-                                </Flex>
-                            </a>
-                        </Boop>
-                    </SwiperSlide>
-                </Swiper>
-            </Slider>
+            <div className={tamanho > 2 && 'Corpo'}>
+                <Slider settings={settings}>
+                    <Swiper modules={[]} {...settings}>
+                        <SwiperSlide>
+                            <Boop x={0} y={-10} scale={1} rotation={0} timing={150}>
+                                <a className="linkLivros" href="https://bioscriptistica.com.br/" target="_blank" rel="noreferrer">
+                                    <Flex className='Livro' direction={"column"}>
+                                        <Image
+                                            className="imgLivro"
+                                            src={Bioscprt}
+                                            alt='Bioscriptistica: linguagem R e Python com aplicações em bioinformática'
+                                        />
+                                        <VStack className="txtLivo" p={25} spacing={16}>
+                                            <Center><h5 style={{textAlign:'center'}}>Bioscriptística: Python e R na bioinformática</h5></Center> 
+                                        </VStack>        
+                                    </Flex>
+                                </a>
+                            </Boop>
+                        </SwiperSlide>
+                    </Swiper>
+                    <Swiper modules={[]} {...settings}>
+                        <SwiperSlide>
+                            <Boop x={0} y={-10} scale={1} rotation={0} timing={150}>
+                                <a className="linkLivros" href="https://link.springer.com/book/10.1007/978-1-4939-7537-2" target="_blank" rel="noreferrer">
+                                    <Flex className='Livro' direction={"column"} >
+                                        <Image
+                                            className="imgLivro"
+                                            src={Peptidomics}
+                                            alt='Livro "Peptidomics: Methods and Strategies"'
+                                        />
+                                        <VStack className="txtLivo" p={25} spacing={16}>
+                                            <Center><h5>Peptidômica</h5> </Center>
+                                        </VStack>        
+                                    </Flex>
+                                </a>
+                            </Boop>
+                        </SwiperSlide>
+                    </Swiper>
+                    <Swiper modules={[]} {...settings}>
+                        <SwiperSlide>
+                            <Boop x={0} y={-10} scale={1} rotation={0} timing={150}>
+                                <a className="linkLivros" href="https://onlinelibrary.wiley.com/doi/book/10.1002/0471721980" target="_blank" rel="noreferrer">
+                                    <Flex className='Livro' direction={"column"}>
+                                        <Image
+                                            className="imgLivro"
+                                            src={Proteomics}
+                                            alt='Livro "Protein Sequencing and Identification Using Tandem Mass Spectrometry"'
+                                        />
+                                        <VStack className="txtLivo" p={25} spacing={16}>
+                                            <Center><h5>Proteômica</h5></Center> 
+                                        </VStack>        
+                                    </Flex>
+                                </a>
+                            </Boop>
+                        </SwiperSlide>
+                    </Swiper>
+                    <Swiper modules={[]} {...settings}>
+                        <SwiperSlide>
+                            <Boop x={0} y={-10} scale={1} rotation={0} timing={150}>
+                                <a className="linkLivros" href="https://link.springer.com/book/10.1007/978-3-319-54398-7" target="_blank" rel="noreferrer">
+                                    <Flex className='Livro' direction={"column"}>
+                                        <Image
+                                            className="imgLivro"
+                                            src={Mass}
+                                            alt='Livro "Mass Spectrometry: A Textbook"'
+                                        />
+                                        <VStack className="txtLivo" p={25} spacing={16}>
+                                            <Center><h5 style={{textAlign:'center'}}>Espectrometria de Massas</h5></Center> 
+                                        </VStack>        
+                                    </Flex>
+                                </a>
+                            </Boop>
+                        </SwiperSlide>
+                    </Swiper>
+                </Slider>
+            </div>
         </div>
         
     )

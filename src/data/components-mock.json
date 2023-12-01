@@ -62,5 +62,19 @@
             "publishDate": "14 de out. 2023",
             "link": "https://www.sciencedirect.com/science/article/pii/S0300908423002730"
         }
+    ],
+    "equipamentos": [
+        {
+            "title": "Synapt G2 HDMS (Q-TOF, Waters) acoplado ao sistema de cromatografia nanoAcquity UPLC (Waters)",
+            "content": "O SYNAPT G2-S HDMS é um espectrômetro de massa de tempo de voo (oa-TOF, Time of Flight) de aceleração ortogonal, de mobilidade iônica, quadrupolo e híbrido controlado pelo software MassLynx® . Este sistema combina espectrometria de massa de alta resolução de massa exata com medições e separações baseadas na mobilidade iônica de alta eficiência (IMS)."
+        },
+        {
+            "title": "AmaZon ETD (ion trap, Bruker) acoplado ao sistema de cromatografia Shimadzu",
+            "content": "A armadilha ETD de íons de velocidade amaZon estabelece novos padrões na identificação de proteínas, com sua maior velocidade de MS/MS, novo isolamento SWIFT e fragmentação SMART. Isso resulta em uma identificação de rotina sem ambiguidades de mais de 2500 proteínas em apenas uma sessão de LC-MS/MS de 5 µg de um lisado HeLa. A linha de transferência de funil de íon dual oferece sensibilidade de aferição absoluta."
+        },
+        {
+            "title": "micrOTOF II (Q-TOF, Bruker), acoplado ao sistema de nano-cromatografia da Bruker",
+            "content": "O MicrOTOF QII é um espectrômetro de massas utilizado para a identificação de proteínas e peptídeos em larga escala com base em suas massas moleculares. A técnica de ionização utilizada por esse aparelho é a ESI (electronspray ionization), que permite a produção de íons a partir de proteínas, peptídeos, outros biopolímeros e pequenas moléculas polares.  O NuBioMol dispõe de um MicrOTOF QII contendo um analisador de massas do tipo híbrido quadrupolo/TOF, da Bruker Daltonics, que utiliza o tempo de vôo (TOF) para a separação de íons. Ele está acoplado a um HPLC Prominence da Shimadzu, compondo portanto um sistema de LCMS."
+        }
     ]
 }
