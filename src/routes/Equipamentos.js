@@ -5,7 +5,6 @@ import Synapt from '../img/equipamentos/Synapt.jpg'
 import micro from '../img/equipamentos/microTOFII.jpg'
 import amazonETD from '../img/equipamentos/amazonETD.png'
 import Modal from 'react-modal'
-import { AnimationWrapper } from 'react-hover-animation'
 
 import data from '../data/components-mock.json';
 
@@ -95,41 +94,35 @@ function Equipamentos () {
             <h2 className='categoriaTitle'>Equipamentos disponíveis</h2>
             <div>
                 <Center className="centerEquips" flexDirection={tamanho < 3 && 'column'} style={{marginTop:100}}>
-                    <AnimationWrapper>
-                        <Center className="englobaImgEquip"
-                        onClick={()=>openModal(0, {path: 'Synapt', alt: 'Synapt G2 HDMS'})}>                     
-                            <img 
-                            height={340}
-                            className="imgEquip"
-                            src={Synapt}
-                            alt="Synapt G2 HDMS"
-                            />
-                            <h5 className="h5img">Synapt G2 HDMS</h5>
-                        </Center>
-                    </AnimationWrapper>
-                    <AnimationWrapper>
-                        <Center className="englobaImgEquip"
-                        onClick={()=>openModal(1, {path: 'amazonETD', alt: 'AmaZon ETD'})}> 
-                            <img 
-                            height={280}
-                            className="imgEquip"
-                            src={amazonETD}
-                            alt="AmaZon ETD"
-                            />
-                            <h5 className="h5img">AmaZon ETD</h5>
-                        </Center>
-                    </AnimationWrapper>
-                    <AnimationWrapper>
-                        <Center className="englobaImgEquip"
-                        onClick={()=>openModal(2, {path: 'micro', alt: 'micrOTOF II'})}> 
-                            <img 
-                            className="imgEquip"
-                            src={micro}
-                            alt="micrOTOF II"
-                            />
-                            <h5 className="h5img">micrOTOF II</h5>
-                        </Center>
-                    </AnimationWrapper>
+                    <Center className="englobaImgEquip"
+                    onClick={()=>openModal(0, {path: 'Synapt', alt: 'Synapt G2 HDMS'})}>                     
+                        <img 
+                        height={340}
+                        className="imgEquip"
+                        src={Synapt}
+                        alt="Synapt G2 HDMS"
+                        />
+                        <h5 className="h5img">Synapt G2 HDMS</h5>
+                    </Center>                    
+                    <Center className="englobaImgEquip"
+                    onClick={()=>openModal(1, {path: 'amazonETD', alt: 'AmaZon ETD'})}> 
+                        <img 
+                        height={280}
+                        className="imgEquip"
+                        src={amazonETD}
+                        alt="AmaZon ETD"
+                        />
+                        <h5 className="h5img">AmaZon ETD</h5>
+                    </Center>                    
+                    <Center className="englobaImgEquip"
+                    onClick={()=>openModal(2, {path: 'micro', alt: 'micrOTOF II'})}> 
+                        <img 
+                        className="imgEquip"
+                        src={micro}
+                        alt="micrOTOF II"
+                        />
+                        <h5 className="h5img">micrOTOF II</h5>
+                    </Center>
                 </Center>
             </div>
         </div>
